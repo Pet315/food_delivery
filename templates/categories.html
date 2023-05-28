@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block active1 %} active {% endblock %}
+
+{% block content %}
+    <h4 class="title">Home page</h4>
+{#    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">#}
+{#    {% for category in categories %}#}
+{#        <div class="col">#}
+{#            <div class="card">#}
+{#                <div class="card-body">#}
+{#                    a#}
+{#                    <h5 class="card-title">{{ category.name }}</h5>#}
+{#                    <p class="card-text">#}
+{#                        <u>You can find there:</u> {{ category.examples }}#}
+{#                    </p>#}
+{#                </div>#}
+{#                <div class="card-body">#}
+{#                    b#}
+{#                    <a href="/products/{{ category.id }}" class="btn btn-primary">Review</a>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    {% endfor %}#}
+{#    </div>#}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 rounded" style="background-color: #D991BA">
+            <p style="text-align: center; margin-top: 20px">Categories</p>
+                <div class="row row-cols-1 g-3">
+                    {% for i in '123'|make_list %}
+                    <div class="col text-center">
+                        <a href="/" class="btn btn-custom" style="background-color: rgba(0, 0, 0, 0.2)">cat{{ i }}</a>
+{#                        <div class="card" style="background-color: #CCCCCC">#}
+{#                            <div class="card-body">#}
+{#                                cat{{ i }}#}
+{#                            </div>#}
+{#                        </div>#}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    {% for i in '12345'|make_list %}
+                    <div class="col">
+                        <div class="card" style="background-color: #FFB17A">
+                            <div class="card-body">
+                                pr{{ i }}
+                            </div>
+                            <div class="card-body">
+                                desc{{ i }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+</div>
+
+{% endblock %}
