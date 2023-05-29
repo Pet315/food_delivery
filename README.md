@@ -11,8 +11,11 @@ How to run this app:
    * venv/Scripts/activate 
 3. Install dependencies:
    * pip install -r requirements.txt
-4. Run the migrations:
+4. To get access to database:
+   * python manage.py createsuperuser
+5. Run the migrations:
    * python manage.py makemigrations
    * python manage.py migrate
-5. Run local server:
+6. Run local server:
    * python manage.py runserver
+ 
