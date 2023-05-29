@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %} Shopping cart {% endblock %}
+
+{% block active2 %} active {% endblock %}
+
+{% block content %}
+    <h4 class="title">Shopping cart page</h4>
+    <h4 class="title">{{ finish }}</h4>
+    <form class="p-2" action="/cart/send_order" method="post">
+        <div class="container">
+            <div class="row">
+                {% csrf_token %}
+                <div class="col-md-6 rounded">
+                    <div class="card" style="background-color: #D991BA">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Enter name">
+                                <br>
+                                <label>Email</label>
+                                <input type="text" name="email" class="form-control" id="email" placeholder="Enter email" required>
+                                <br>
+                                <label>Phone</label>
+                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter phone">
+                                <br>
+                                <label>Address</label>
+                                <input type="text" name="address" class="form-control" id="address" placeholder="Enter address">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 rounded text-center">
+                    <div class="row row-cols-1 row-cols-lg-2 g-4">
+                        {% for selected_product in cart %}
+                            {% if selected_product.quantity > 0 %}
+                            <div class="col">
+                                <div class="card" style="background-color: #FFB17A">
+                                    <div class="card-body text-center">
+                                        <p><b>{{ selected_product.name }}</b></p>
+                                        {% load static %}
+                                        <img src="{% static 'images/' %}{{ selected_product.product_id }}.jpg" alt="Image {{ selected_product.product_id }}" style="width:200px; height: 150px">
+                                        <p style="margin-top: 10px">Quantity: {{ selected_product.quantity }}</p>
+                                        <div class="row row-cols-2 g-2">
+                                            <div class="col">
+                                                <a href="/add_to_cart/{{ selected_product.product_id }}" class="btn btn-custom" style="margin-bottom: 10px; background-color: rgba(0, 0, 0, 0.2); width: 50px; text-align: center">+</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="/delete_from_cart/{{ selected_product.product_id }}" class="btn btn-custom" style="margin-bottom: 10px; background-color: rgba(0, 0, 0, 0.2); width: 50px; text-align: center">-</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p style="margin-top: 30px">Total price: {{ total_price }}$</p>
+                    <input type="text" name="total_price" value="{{ total_price }}" style="display: none;">
+                    <button type="submit" class="btn btn-custom" style="background-color: #D991BA">Send the order</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}
