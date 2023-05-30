@@ -13,3 +13,5 @@ How to run this app:
    * pip install django
 5. Run local server:
    * python manage.py runserver
+
+Link: https://food-delivery2.herokuapp.com/
