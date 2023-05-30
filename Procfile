@@ -1,0 +1,1 @@
+web: gunicorn office_market.wsgi:application --log-file -
