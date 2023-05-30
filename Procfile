@@ -1,1 +1,1 @@
-web: gunicorn office_market.wsgi:application --log-file -
+web: gunicorn food_delivery.wsgi:application --log-file -
