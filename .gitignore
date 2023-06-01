@@ -2,7 +2,6 @@
 /venv
 /main/__pycache__
 /food_delivery/__pycache__
-/food_delivery/settings1.py
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,django,pycharm
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,pycharm
