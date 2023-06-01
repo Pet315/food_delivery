@@ -8,14 +8,27 @@ How to run this app:
 2. Clone repository:
    * git clone https://github.com/Pet315/food_delivery
 3. Go to the root folder of the project:
-   * cd food_delivery
-4. Activate virtual environment: 
-   * Set-ExecutionPolicy Unrestricted -Scope Process
-   * python -m venv venv
-   * venv/Scripts/activate (Linux: source venv/bin/activate)
+```
+cd food_delivery
+```
+4. Activate virtual environment:
+* Windows:
+```
+Set-ExecutionPolicy Unrestricted -Scope Process
+python -m venv venv
+venv/Scripts/activate
+```
+* Linux:
+```
+python -m venv venv
+source venv/bin/activate
+```
 5. Install packages:
-   * pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 6. Run local server:
-   * python manage.py runserver
-
+```
+python manage.py runserver
+```
 Link: https://food-delivery2.herokuapp.com/
