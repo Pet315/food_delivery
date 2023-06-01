@@ -1,6 +1,0 @@
-id,product,quantity,name,email,phone,address,date,total_price,is_processed
-5,12,1,Consumer,testUser@mail.com,+16462880835,"Kyi, Sweds 2",2023-05-31,37.99,0
-4,7,1,Consumer,testUser@mail.com,+16462880835,"Kyi, Sweds 2",2023-05-31,37.99,0
-3,6,1,Consumer,testUser@mail.com,+16462880835,"Kyi, Sweds 2",2023-05-31,37.99,0
-2,1,-2,Consumer,testUser@mail.com,+16462880835,"Kyi, Sweds 2",2023-05-31,37.99,0
-1,2,0,Consumer,testUser@mail.com,+16462880835,"Kyi, Sweds 2",2023-05-31,37.99,0
