@@ -32,3 +32,4 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 Link: https://food-delivery2.herokuapp.com/
+ 
