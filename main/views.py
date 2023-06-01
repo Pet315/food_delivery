@@ -43,21 +43,25 @@ def edit_cart_product(product_id, way, user_id):
 
     selected_products = Cart.objects.filter(user=user_id)
     total_price = 0
+    products = []
     for selected_product in selected_products:
-        price = Product.objects.filter(id=selected_product.product_id)[0].price
+        product = Product.objects.filter(id=selected_product.product_id)[0]
+        price = product.price
         total_price += float(price) * float(selected_product.quantity)
-    return round(total_price, 2)
+        products.append({'name': product.name, 'price': price, 'selected_product': selected_product})
+
+    return round(total_price, 2), products
 
 
 def add_to_cart(request, id: int):
-    total_price = edit_cart_product(id, '+', request.user.id)
+    total_price, products = edit_cart_product(id, '+', request.user.id)
     print(request.user.id)
-    return render(request, 'shopping_cart_page.html', context={'cart': Cart.objects.all(), 'total_price': total_price})
+    return render(request, 'shopping_cart_page.html', context={'total_price': total_price, 'products': products})
 
 
 def delete_from_cart(request, id: int):
-    total_price = edit_cart_product(id, '-', request.user.id)
-    return render(request, 'shopping_cart_page.html', context={'cart': Cart.objects.all(), 'total_price': total_price})
+    total_price, products = edit_cart_product(id, '-', request.user.id)
+    return render(request, 'shopping_cart_page.html', context={'total_price': total_price, 'products': products})
 
 
 def send_order(request):
