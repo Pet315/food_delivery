@@ -1,0 +1,16 @@
+id,name,desc,price,shop
+15,Chicken Caesar Wrap,"Grilled chicken, crisp romaine lettuce, Parmesan cheese, and tangy Caesar dressing wrapped in a warm tortilla, creating a delicious and satisfying meal.",9.99,3
+14,Garlic Butter Shrimp,"Succulent shrimp sautéed in a flavorful garlic butter sauce, served with rice or pasta and a side of steamed vegetables.",16.99,3
+13,Loaded Potato Skins,"Crispy potato skins filled with melted cheese, crispy bacon bits, and topped with sour cream and chives, a perfect appetizer or snack.",7.99,3
+12,Ribeye Steak,"A premium cut of beef known for its tenderness and rich flavor, seasoned and grilled to your desired level of doneness, served with a choice of side dishes.",24.99,3
+11,Steakhouse Burger,"A mouthwatering burger made with a juicy beef patty, topped with melted cheese, crispy bacon, caramelized onions, lettuce, tomato, and served on a toasted bun.",10.99,3
+10,California Roll,"A popular sushi roll made with crab meat, avocado, cucumber, and sesame seeds, wrapped in sushi rice and seaweed.",11.99,2
+9,Teriyaki Chicken,"Grilled chicken glazed with a sweet and savory teriyaki sauce, served with steamed rice and a side of vegetables.",13.99,2
+8,Miso Soup,"A traditional Japanese soup made with fermented soybean paste (miso), tofu, seaweed, and scallions, providing a comforting and savory flavor.",4.99,2
+7,Tempura Shrimp,"Crispy and golden-brown battered shrimp served with a tangy dipping sauce, perfect as an appetizer or main dish.",15.99,2
+6,Sushi Platter,"An assortment of fresh and expertly crafted sushi rolls, nigiri, and sashimi, showcasing a variety of flavors and textures.",18.99,2
+5,Beef Burger,"A juicy beef patty grilled to perfection, topped with cheese, lettuce, tomato, onion, and served on a toasted bun.",9.99,1
+4,Margherita Pizza,"A traditional Italian pizza topped with fresh tomatoes, mozzarella cheese, basil leaves, and a drizzle of olive oil.",14.99,1
+3,Caesar Salad,"A refreshing salad made with crisp romaine lettuce, homemade Caesar dressing, crunchy croutons, and shaved Parmesan cheese.",8.99,1
+2,Chicken Alfredo,"Tender grilled chicken breast smothered in a creamy Alfredo sauce made with butter, cream, and Parmesan cheese, served over fettuccine pasta.",12.99,1
+1,Spaghetti Bolognese,"A classic Italian dish featuring al dente spaghetti served with a rich and flavorful Bolognese sauce made with ground meat, tomatoes, and aromatic herbs.",10.99,1
