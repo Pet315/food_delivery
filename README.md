@@ -9,27 +9,21 @@ How to run this app:
 ```
 git clone https://github.com/Pet315/food_delivery
 ```
-3. Go to the root folder of the project:
+4. Go to the root folder of the project:
 ```
 cd food_delivery
 ```
 4. Activate virtual environment:
-* Windows:
 ```
-Set-ExecutionPolicy Unrestricted -Scope Process
 python -m venv venv
 venv/Scripts/activate
 ```
-* Linux:
-```
-python -m venv venv
-source venv/bin/activate
-```
-5. Install packages:
+5. Install all packages:
 ```
 pip install -r requirements.txt
 ```
 6. Run local server:
 ```
 python manage.py runserver
-``` 
+```
+ 
