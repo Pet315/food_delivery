@@ -4,7 +4,7 @@ Framework: Django
 
 How to run this app:
 
-1. Install Python (with all modifications)
+1. Install Python
 2. Clone repository:
 ```
 git clone https://github.com/Pet315/food_delivery
